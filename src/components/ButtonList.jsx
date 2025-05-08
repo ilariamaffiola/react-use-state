@@ -43,7 +43,7 @@ const [selectedLanguage, setSelectedLanguage] = useState(null);
        ))}      
     </div>
     <div className='container'>
-    <div className="description">
+   
         {selectedLanguage && (
             <div className='description'>
             <h2>{languages[selectedLanguage - 1].title}</h2>
@@ -52,7 +52,6 @@ const [selectedLanguage, setSelectedLanguage] = useState(null);
         )}
     </div>
   
-</div>
 </>
 
   );
