@@ -1,13 +1,10 @@
 import React from 'react';
-import Cards from './components/Cards';
+import ButtonList from './components/ButtonList';
 
 function App() {
   
-function sayHello (){
-  alert("Hello World");
-}
   return (
-    <Cards />
+    <ButtonList />
   )
 }
 
