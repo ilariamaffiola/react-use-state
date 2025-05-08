@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonList from './components/ButtonList';
+import Cards from './components/Cards';
 
 function App() {
   
@@ -7,7 +7,7 @@ function sayHello (){
   alert("Hello World");
 }
   return (
-    <ButtonList />
+    <Cards />
   )
 }
 
