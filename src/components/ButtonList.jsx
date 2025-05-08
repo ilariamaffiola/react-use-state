@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useState } from 'react';
 const ButtonList = () => {
     const languages = [
         {
@@ -34,13 +34,27 @@ const ButtonList = () => {
         }
       ];
 
-
+const [selectedLanguage, setSelectedLanguage] = useState(null);
   return (
+    <>
     <div className='container'>
        {languages.map((language) => (
-        <button key={`butt-${language.id}`} className='button'>{language.title}</button>
+        <button key={`butt-${language.id}`} className='button' onClick={() => setSelectedLanguage(language.id)} >{language.title}</button>
        ))}      
     </div>
+    <div className='container'>
+    <div className="description">
+        {selectedLanguage && (
+            <div className='description'>
+            <h2>{languages[selectedLanguage - 1].title}</h2>
+            <p>{languages[selectedLanguage - 1].description}</p>
+            </div>
+        )}
+    </div>
+  
+</div>
+</>
+
   );
 }
 
