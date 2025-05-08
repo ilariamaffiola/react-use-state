@@ -36,7 +36,10 @@ const ButtonList = () => {
 
 
   return (
-    <div>
+    <div className='container'>
+       {languages.map((language) => (
+        <button key={`butt-${language.id}`} className='button'>{language.title}</button>
+       ))} 
       
     </div>
   );

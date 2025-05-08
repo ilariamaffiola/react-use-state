@@ -1,1 +1,28 @@
+header{
+  background-color: #bcbdbe;
+  padding: 20px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1{
+  font-size: 20px;
+}
+.button{
+  background-color: royalblue;
+  color:white;
+  padding: 10px 20px;
+  border-radius: 10%;
+  margin: 0 10px;
+}
+.description{
+  font-size: 15px;
+  padding: 8px;
+}
+.descriprion h2{
+  font-size: 18px;
+  font-weight: 600;
+}
+
 
